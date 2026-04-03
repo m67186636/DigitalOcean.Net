@@ -4483,7 +4483,7 @@ paths:
                 "emails": ["sammy@digitalocean.com"],
                 "slack_webhooks": [
                     {
-                        "url": "https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX",
+                        "url": "https://hooks.slack.com/services/EXAMPLE_WEBHOOK_URL",
                         "channel": "Channel Name",
                     }
                 ],
@@ -22032,7 +22032,7 @@ paths:
                 "slack": [
                   {
                     "channel": "Production Alerts",
-                    "url": "https://hooks.slack.com/services/T1234567/AAAAAAAA/ZZZZZZ"
+                    "url": "https://hooks.slack.com/services/EXAMPLE_WEBHOOK_URL"
                   }
                 ]
               },
@@ -22276,7 +22276,7 @@ paths:
                 "slack": [
                   {
                     "channel": "Production Alerts",
-                    "url": "https://hooks.slack.com/services/T1234567/AAAAAAAA/ZZZZZZ"
+                    "url": "https://hooks.slack.com/services/EXAMPLE_WEBHOOK_URL"
                   }
                 ]
               },
@@ -35024,7 +35024,7 @@ paths:
             curl -X POST \
               -H "Content-Type: application/json" \
               -H "Authorization: Bearer $DIGITALOCEAN_TOKEN" \
-              -d '{"name":"Landing page degraded performance","type":"latency","threshold":300,"comparison":"greater_than","notifications":{"email":["bob@example.com"],"slack":[{"channel":"Production Alerts","url":"https://hooks.slack.com/services/T1234567/AAAAAAAA/ZZZZZZ"}]},"period":"2m"}' \
+              -d '{"name":"Landing page degraded performance","type":"latency","threshold":300,"comparison":"greater_than","notifications":{"email":["bob@example.com"],"slack":[{"channel":"Production Alerts","url":"https://hooks.slack.com/services/EXAMPLE_WEBHOOK_URL"}]},"period":"2m"}' \
               "https://api.digitalocean.com/v2/uptime/checks/{check_id}/alerts"
         - lang: Python
           source: |-
@@ -35045,7 +35045,7 @@ paths:
                 "slack": [
                   {
                     "channel": "Production Alerts",
-                    "url": "https://hooks.slack.com/services/T1234567/AAAAAAAA/ZZZZZZ"
+                    "url": "https://hooks.slack.com/services/EXAMPLE_WEBHOOK_URL"
                   }
                 ]
               },
@@ -35147,7 +35147,7 @@ paths:
             curl -X PUT \
               -H "Content-Type: application/json" \
               -H "Authorization: Bearer $DIGITALOCEAN_TOKEN" \
-              -d '{"name":"Landing page down globally","type":"down_global","notifications":{"email":["bob@example.com"],"slack":[{"channel":"Production Alerts","url":"https://hooks.slack.com/services/T1234567/AAAAAAAA/ZZZZZZ"}]},"period":"2m"}' \
+              -d '{"name":"Landing page down globally","type":"down_global","notifications":{"email":["bob@example.com"],"slack":[{"channel":"Production Alerts","url":"https://hooks.slack.com/services/EXAMPLE_WEBHOOK_URL"}]},"period":"2m"}' \
               "https://api.digitalocean.com/v2/uptime/checks/{check_id}/alerts/{alert_id}"
         - lang: Python
           source: >-
@@ -35171,7 +35171,7 @@ paths:
                 "slack": [
                   {
                     "channel": "Production Alerts",
-                    "url": "https://hooks.slack.com/services/T1234567/AAAAAAAA/ZZZZZZ"
+                    "url": "https://hooks.slack.com/services/EXAMPLE_WEBHOOK_URL"
                   }
                 ]
               },
@@ -45423,7 +45423,7 @@ components:
           title: URL of the Slack webhook
           type: string
           example: >-
-            https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX
+            https://hooks.slack.com/services/EXAMPLE_WEBHOOK_URL
         channel:
           title: Name of the Slack Webhook Channel
           type: string
@@ -55199,7 +55199,7 @@ components:
         url:
           type: string
           description: Slack Webhook URL.
-          example: https://hooks.slack.com/services/T1234567/AAAAAAAA/ZZZZZZ
+          example: https://hooks.slack.com/services/EXAMPLE_WEBHOOK_URL
     alerts:
       type: object
       required:
@@ -58557,7 +58557,7 @@ components:
                 type: string
                 format: string
                 description: Slack Webhook URL.
-                example: https://hooks.slack.com/services/T1234567/AAAAAAAA/ZZZZZZ
+                example: https://hooks.slack.com/services/EXAMPLE_WEBHOOK_URL
     alert_updatable:
       type: object
       properties:
@@ -70623,7 +70623,7 @@ components:
                     slack:
                       - channel: Production Alerts
                         url: >-
-                          https://hooks.slack.com/services/T1234567/AAAAAAAA/ZZZZZZ"
+                          https://hooks.slack.com/services/EXAMPLE_WEBHOOK_URL"
                   compare: GreaterThan
                   description: CPU Alert
                   enabled: true

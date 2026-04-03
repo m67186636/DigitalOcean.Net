@@ -2,6 +2,11 @@
   <Folder Name="/samples/">
     <Project Path="samples/DigitalOcean.Net.Samples/DigitalOcean.Net.Samples.csproj" />
   </Folder>
+  <Folder Name="/solutions/">
+    <File Path="CHANGELOG.md" />
+    <File Path="Directory.Build.props" />
+    <File Path="logo.png" />
+  </Folder>
   <Folder Name="/src/">
     <Project Path="src/DigitalOcean.Net/DigitalOcean.Net.csproj" />
   </Folder>
