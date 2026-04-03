@@ -8,7 +8,7 @@
 
     <!-- NuGet Package Metadata -->
     <PackageId>DigitalOcean.Net</PackageId>
-    <Version>0.1.0</Version>
+    <Version>1.0.0</Version>
     <Authors>Sunny</Authors>
     <Company>Sunny</Company>
     <Description>A comprehensive .NET client library for the DigitalOcean API, covering all 40+ resource categories including Droplets, Kubernetes, App Platform, Databases, and more. / 一个全面的 DigitalOcean API .NET 客户端库，覆盖全部 40+ 资源类别。</Description>
