@@ -1,6 +1,6 @@
 # DigitalOcean.Net
 
-[ English ](README.md) | [ **中文** ](README.zh-CN.md)
+[ English ](README.md) | [ **中文** ](README.zh-CN.md) | [ 日本語 ](README.ja-JP.md) | [ Français ](README.fr-FR.md)
 
 ---
 
@@ -140,6 +140,56 @@ DigitalOcean 使用 OAuth Bearer 令牌认证。从 [DigitalOcean 控制面板](
 - `doo_v1_` — OAuth 应用令牌
 - `dor_v1_` — 刷新令牌
 
+## 技术架构
+
+### 代码生成
+
+本库的客户端代码由 [Microsoft Kiota](https://github.com/microsoft/kiota) 从 [DigitalOcean 官方 OpenAPI 规范](https://github.com/digitalocean/openapi) 自动生成。这意味着：
+
+- **完整性**：API 覆盖与官方规范完全一致，不会遗漏端点
+- **准确性**：请求/响应模型严格匹配 API 定义，类型安全
+- **可维护性**：当 DigitalOcean 更新 API 时，只需重新生成即可同步更新
+
+### 依赖项说明
+
+本库依赖以下包，均为实现完整功能所必需：
+
+#### Kiota 运行时（API 客户端核心）
+
+这些是 [Microsoft Kiota](https://github.com/microsoft/kiota) 生成的客户端代码所需的运行时库。Kiota 是微软官方的 OpenAPI 客户端生成器，采用模块化设计，每个序列化格式独立为一个包：
+
+| 包 | 用途 | 仓库 |
+|---|---|---|
+| [Microsoft.Kiota.Abstractions](https://www.nuget.org/packages/Microsoft.Kiota.Abstractions) | Kiota 核心抽象层，定义请求/响应管道 | [microsoft/kiota-abstractions-dotnet](https://github.com/microsoft/kiota-abstractions-dotnet) |
+| [Microsoft.Kiota.Http.HttpClientLibrary](https://www.nuget.org/packages/Microsoft.Kiota.Http.HttpClientLibrary) | 基于 `HttpClient` 的 HTTP 传输实现 | [microsoft/kiota-http-dotnet](https://github.com/microsoft/kiota-http-dotnet) |
+| [Microsoft.Kiota.Serialization.Json](https://www.nuget.org/packages/Microsoft.Kiota.Serialization.Json) | JSON 序列化/反序列化（API 的主要数据格式） | [microsoft/kiota-serialization-json-dotnet](https://github.com/microsoft/kiota-serialization-json-dotnet) |
+| [Microsoft.Kiota.Serialization.Text](https://www.nuget.org/packages/Microsoft.Kiota.Serialization.Text) | 纯文本序列化（部分 API 返回文本响应） | [microsoft/kiota-serialization-text-dotnet](https://github.com/microsoft/kiota-serialization-text-dotnet) |
+| [Microsoft.Kiota.Serialization.Form](https://www.nuget.org/packages/Microsoft.Kiota.Serialization.Form) | 表单数据序列化（部分 API 接受表单提交） | [microsoft/kiota-serialization-form-dotnet](https://github.com/microsoft/kiota-serialization-form-dotnet) |
+| [Microsoft.Kiota.Serialization.Multipart](https://www.nuget.org/packages/Microsoft.Kiota.Serialization.Multipart) | Multipart 数据序列化（文件上传等场景） | [microsoft/kiota-serialization-multipart-dotnet](https://github.com/microsoft/kiota-serialization-multipart-dotnet) |
+
+#### 依赖注入支持
+
+| 包 | 用途 | 仓库 |
+|---|---|---|
+| [Microsoft.Extensions.DependencyInjection.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.DependencyInjection.Abstractions) | DI 容器抽象，提供 `IServiceCollection` 扩展 | [dotnet/runtime](https://github.com/dotnet/runtime) |
+| [Microsoft.Extensions.Http](https://www.nuget.org/packages/Microsoft.Extensions.Http) | `IHttpClientFactory` 支持，管理 HttpClient 生命周期 | [dotnet/runtime](https://github.com/dotnet/runtime) |
+| [Microsoft.Extensions.Options](https://www.nuget.org/packages/Microsoft.Extensions.Options) | 选项模式，支持 `IOptions<T>` 配置绑定 | [dotnet/runtime](https://github.com/dotnet/runtime) |
+
+#### 工具支持
+
+| 包 | 用途 | 仓库 |
+|---|---|---|
+| [YamlDotNet](https://www.nuget.org/packages/YamlDotNet) | YAML 解析，用于读取 `doctl` CLI 配置文件中的令牌 | [aaubry/YamlDotNet](https://github.com/aaubry/YamlDotNet) |
+
+#### 多目标框架兼容（条件依赖）
+
+以下包仅在旧版目标框架下引入，为其补充缺失的 API：
+
+| 包 | 条件 | 用途 | 仓库 |
+|---|---|---|---|
+| [System.Text.Json](https://www.nuget.org/packages/System.Text.Json) | `netstandard2.0`、`netstandard2.1` | 高性能 JSON 序列化（.NET 8+ 已内置） | [dotnet/runtime](https://github.com/dotnet/runtime) |
+| [Microsoft.Bcl.AsyncInterfaces](https://www.nuget.org/packages/Microsoft.Bcl.AsyncInterfaces) | 仅 `netstandard2.0` | `IAsyncEnumerable<T>` 等异步接口（.NET Standard 2.1+ 已内置） | [dotnet/runtime](https://github.com/dotnet/runtime) |
+
 ## 系统要求
 
 - .NET Standard 2.0+ / .NET 8.0+ / .NET 9.0+ / .NET 10.0+
@@ -148,6 +198,10 @@ DigitalOcean 使用 OAuth Bearer 令牌认证。从 [DigitalOcean 控制面板](
 ## 贡献
 
 欢迎贡献！请创建 Issue 或提交 Pull Request。
+
+## 致谢
+
+本项目由 [GitHub Copilot CLI](https://github.com/github/copilot-cli) + [Claude Opus 4.6](https://www.anthropic.com/) 协助开发。
 
 ## 许可证
 
