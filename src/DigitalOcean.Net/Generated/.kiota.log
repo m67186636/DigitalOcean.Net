@@ -1,0 +1,94 @@
+Warning: KiotaBuilder OpenAPI warning: #/ - The schema reserved_ip_create is a polymorphic type but does not define a discriminator. This will result in serialization errors.
+Warning: KiotaBuilder OpenAPI warning: #/ - The schema partner_attachment_updatable is a polymorphic type but does not define a discriminator. This will result in serialization errors.
+Warning: KiotaBuilder OpenAPI warning: #/ - The schema floating_ip_create is a polymorphic type but does not define a discriminator. This will result in serialization errors.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/app_domain_spec/properties/zone - The format hostname is not supported by Kiota and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/app_component_instance_base/properties/autoscaling/properties/min_instance_count - The format uint32 is not supported by Kiota for the type Integer and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/app_component_instance_base/properties/autoscaling/properties/max_instance_count - The format uint32 is not supported by Kiota for the type Integer and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/app_component_instance_base/properties/autoscaling/properties/metrics/properties/cpu/properties/percent - The format uint32 is not supported by Kiota for the type Integer and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/app_job_invocation/properties/trigger/properties/manual/properties/user/properties/email - The format email is not supported by Kiota and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/apps_instance_size/properties/bandwidth_allowance_gib - The format int64 is not supported by Kiota for the type String and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/apps_instance_size/properties/cpus - The format int64 is not supported by Kiota for the type String and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/apps_instance_size/properties/memory_bytes - The format int64 is not supported by Kiota for the type String and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/app_metrics_bandwidth_usage_details/properties/bandwidth_bytes - The format uint64 is not supported by Kiota for the type String and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/cdn_endpoint/properties/origin - The format hostname is not supported by Kiota and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/cdn_endpoint/properties/endpoint - The format hostname is not supported by Kiota and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/cdn_endpoint/properties/custom_domain - The format hostname is not supported by Kiota and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/update_endpoint/properties/custom_domain - The format hostname is not supported by Kiota and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/dedicated_inference/properties/endpoints/properties/public_endpoint_fqdn - The format uri is not supported by Kiota and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/dedicated_inference/properties/endpoints/properties/private_endpoint_fqdn - The format uri is not supported by Kiota and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/network_v4/properties/ip_address - The format ipv4 is not supported by Kiota and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/network_v4/properties/netmask - The format ipv4 is not supported by Kiota and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/network_v6/properties/ip_address - The format ipv6 is not supported by Kiota and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/network_v6/properties/gateway - The format ipv6 is not supported by Kiota and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/action_link/properties/href - The format uri is not supported by Kiota and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/floating_ip/properties/ip - The format ipv4 is not supported by Kiota and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/cluster_read/properties/cluster_subnet - The format cidr is not supported by Kiota for the type String and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/cluster_read/properties/service_subnet - The format cidr is not supported by Kiota for the type String and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/cluster/properties/cluster_subnet - The format cidr is not supported by Kiota for the type String and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/cluster/properties/service_subnet - The format cidr is not supported by Kiota for the type String and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/credentials/properties/server - The format uri is not supported by Kiota and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/user/properties/kubernetes_cluster_user/properties/username - The format email is not supported by Kiota and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/nfs_snapshot_response/properties/size_gib - The format uint64 is not supported by Kiota for the type Integer and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/partner_attachment/properties/id - The format string is not supported by Kiota for the type String and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/partner_attachment/properties/vpc_ids/items - The format string is not supported by Kiota for the type String and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/partner_attachment/properties/children/items - The format string is not supported by Kiota for the type String and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/partner_attachment_writable/properties/vpc_ids/items - The format string is not supported by Kiota for the type String and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/partner_attachment_updatable/anyOf/1/properties/vpc_ids/items - The format string is not supported by Kiota for the type String and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/resource/properties/links/properties/self - The format uri is not supported by Kiota and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/reserved_ip/properties/ip - The format ipv4 is not supported by Kiota and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/reserved_ipv6_list/properties/reserved_ipv6s/items/properties/ip - The format ipv6 is not supported by Kiota and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/reserved_ipv6/properties/ip - The format ipv6 is not supported by Kiota and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/check_updatable/properties/target - The format url is not supported by Kiota for the type String and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/notification/properties/slack/items/properties/channel - The format string is not supported by Kiota for the type String and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/notification/properties/slack/items/properties/url - The format string is not supported by Kiota for the type String and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/apiIndexedDataSource/properties/failed_item_count - The format uint64 is not supported by Kiota for the type String and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/apiIndexedDataSource/properties/indexed_file_count - The format uint64 is not supported by Kiota for the type String and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/apiIndexedDataSource/properties/indexed_item_count - The format uint64 is not supported by Kiota for the type String and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/apiIndexedDataSource/properties/removed_item_count - The format uint64 is not supported by Kiota for the type String and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/apiIndexedDataSource/properties/skipped_item_count - The format uint64 is not supported by Kiota for the type String and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/apiIndexedDataSource/properties/total_bytes - The format uint64 is not supported by Kiota for the type String and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/apiIndexedDataSource/properties/total_bytes_indexed - The format uint64 is not supported by Kiota for the type String and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/apiIndexedDataSource/properties/total_file_count - The format uint64 is not supported by Kiota for the type String and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/apiIndexingJob/properties/total_tokens - The format uint64 is not supported by Kiota for the type String and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/apiKnowledgeBase/properties/user_id - The format int64 is not supported by Kiota for the type String and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/apiAgentPublic/properties/route_created_by - The format uint64 is not supported by Kiota for the type String and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/apiAgentPublic/properties/user_id - The format uint64 is not supported by Kiota for the type String and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/apiAnthropicAPIKeyInfo/properties/created_by - The format uint64 is not supported by Kiota for the type String and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/apiAgentAPIKeyInfo/properties/created_by - The format uint64 is not supported by Kiota for the type String and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/apiAgent/properties/route_created_by - The format uint64 is not supported by Kiota for the type String and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/apiAgent/properties/user_id - The format uint64 is not supported by Kiota for the type String and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/apiAgentFunction/properties/created_by - The format uint64 is not supported by Kiota for the type String and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/apiModelProviderKeyInfo/properties/created_by - The format uint64 is not supported by Kiota for the type String and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/apiOpenAIAPIKeyInfo/properties/created_by - The format uint64 is not supported by Kiota for the type String and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/apiEvaluationDataset/properties/file_size - The format uint64 is not supported by Kiota for the type String and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/apiEvaluationTestCase/properties/created_by_user_id - The format uint64 is not supported by Kiota for the type String and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/apiEvaluationTestCase/properties/updated_by_user_id - The format uint64 is not supported by Kiota for the type String and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/apiWorkspace/properties/created_by - The format uint64 is not supported by Kiota for the type String and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/apiAgentVersion/properties/id - The format uint64 is not supported by Kiota for the type String and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/apiAuditHeader/properties/actor_id - The format uint64 is not supported by Kiota for the type String and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/apiAuditHeader/properties/user_id - The format uint64 is not supported by Kiota for the type String and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/apiFileUploadDataSource/properties/size_in_bytes - The format uint64 is not supported by Kiota for the type String and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/apiPresignedUrlFile/properties/file_size - The format int64 is not supported by Kiota for the type String and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/apiEvaluationRun/properties/created_by_user_id - The format uint64 is not supported by Kiota for the type String and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/apiPrompt/properties/input_tokens - The format uint64 is not supported by Kiota for the type String and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/apiPrompt/properties/output_tokens - The format uint64 is not supported by Kiota for the type String and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/schemas/apiModelAPIKeyInfo/properties/created_by - The format uint64 is not supported by Kiota for the type String and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/parameters/number_lines/schema - The format int64 is not supported by Kiota for the type String and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/parameters/floating_ip/schema - The format ipv4 is not supported by Kiota and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/parameters/pa_id/schema - The format string is not supported by Kiota for the type String and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/parameters/reserved_ip/schema - The format ipv4 is not supported by Kiota and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/parameters/reserved_ipv6/schema - The format ipv6 is not supported by Kiota and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/responses/all_dedicated_inferences/content/application~1json/schema/properties/links/properties/pages/additionalProperties - The format uri is not supported by Kiota and the string type will be used.
+Warning: KiotaBuilder OpenAPI warning: #/components/responses/reserved_ipv6_create/content/application~1json/schema/properties/reserved_ipv6/properties/ip - The format ipv6 is not supported by Kiota and the string type will be used.
+Warning: KiotaBuilder Discriminator app_job_spec is not inherited from app_component_base.
+Warning: KiotaBuilder Discriminator app_service_spec is not inherited from app_component_base.
+Warning: KiotaBuilder Discriminator app_worker_spec is not inherited from app_component_base.
+Warning: KiotaBuilder Discriminator kubernetes_node_pool_update is not inherited from kubernetes_node_pool_base.
+Warning: KiotaBuilder Discriminator kubernetes_node_pool is not inherited from kubernetes_node_pool_base.
+Warning: KiotaBuilder Discriminator kubernetes_node_pool is not inherited from kubernetes_node_pool_update.
+Warning: KiotaBuilder Discriminator kubernetes_node_pool_base is not inherited from kubernetes_node_pool_update.
+Warning: KiotaBuilder Discriminator vpc_peering is not inherited from vpc_peering_updatable.
+Warning: KiotaBuilder Discriminator check is not inherited from check_updatable.
+Warning: KiotaBuilder Discriminator alert is not inherited from alert_updatable.
+Warning: KiotaBuilder Discriminator apps_deployments_response is not inherited from pagination.
+Warning: KiotaBuilder Discriminator apps_response is not inherited from pagination.

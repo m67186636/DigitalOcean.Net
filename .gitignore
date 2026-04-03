@@ -419,3 +419,6 @@ FodyWeavers.xsd
 
 # NuGet output
 nupkg/
+
+# Keep all Kiota-generated API client files (override Logs/, Backup* rules)
+!src/DigitalOcean.Net/Generated/**
